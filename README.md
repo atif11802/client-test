@@ -1,7 +1,9 @@
 # Funshion React app
 
-
 ## Guidline
+
+## Live Link
+https://stellular-smakager-8a4009.netlify.app/
 
 
 ## To run this App
@@ -23,10 +25,12 @@
 ## Tech
 
 - [Reactjs] - Single Page web Application!
+- [redux] - To manage global state
 - [react-query] - To fetch or mutate data from api
 - [react-toastify] - To Show the notification nicely 
 - [tailwind css] - great UI boilerplate for modern web apps and responsive design
 - [node.js] - To run the server
+
 
 ## For production build
 - type npm build in command to get the buld folder which will be deployed
