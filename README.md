@@ -16,6 +16,7 @@
 - Simple Ecommerce Website
 - user Can sign in and sign out
 - user can see the Product in Home Page
+- Possible to see Single product in New Page
 
 
 
