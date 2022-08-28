@@ -4,7 +4,7 @@ const FeaturedCard = () => {
 	return (
 		<div>
 			{/* <div className='flex-col md:flex  sm:flex-row  md:justify-center mt-16'> */}
-			<div className='flex md:flex  sm:flex-row  md:justify-center mt-16'>
+			<div className='flex md:flex  sm:flex-row  justify-center items-center mt-16'>
 				<div className='grid grid-cols-2 gap-2 md:gap-4'>
 					<img
 						src='https://images.unsplash.com/photo-1533088622265-f0ca964f0853?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80'
@@ -27,7 +27,7 @@ const FeaturedCard = () => {
 						className='w-60'
 					/> */}
 					<div className='relative'>
-						<div className='border-8 border-white w-[80px] h-[90px]  md:w-[170px] md:h-[150px] absolute bottom-6 left-3 md:bottom-8 md:left-8  text-clip'>
+						<div className='border-8 border-white w-[80px] h-[90px] md:w-[150px] md:h-[150px]  lg:w-[110px] lg:h-[150px] absolute bottom-6 left-3 md:bottom-8 md:left-3 lg:bottom-8 lg:left-8  text-clip'>
 							<h1 className='text-white text-sm md:text-3xl p-4 mt-4 text-wrap '>
 								30% off
 							</h1>

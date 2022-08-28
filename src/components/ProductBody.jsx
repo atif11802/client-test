@@ -12,28 +12,28 @@ import { GiSelfLove } from "react-icons/gi";
 
 const ProductBody = ({ data }) => {
 	return (
-		<div className='md:max-w-screen mx-auto flex flex-col md:flex-row justify-center mt-12  '>
-			<div className='basis-0 md:basis-1/2 flex flex-col justify-center items-center'>
+		<div className='md:max-w-screen mx-auto flex flex-col lg:flex-row justify-center mt-12  '>
+			<div className='basis-0 md:basis-1/2 flex flex-col lg:justify-center lg:items-center'>
 				<img
 					src={data.image}
 					alt=''
-					className=' w-[280px] h-[400px] md:w-[524px] md:h-[695px]'
+					className=' w-[280px] h-[400px] lg:w-[524px] lg:h-[695px]'
 				/>
 				<div className='flex mt-2'>
 					<img
 						src={data.image}
 						alt=''
-						className='w-[70px] h-[70px] md:w-[161px] md:h-[161px] mt-2'
+						className='w-[70px] h-[70px] lg:w-[161px] lg:h-[161px] mt-2'
 					/>
 					<img
 						src={data.image}
 						alt=''
-						className='w-[70px] h-[70px] md:w-[161px] md:h-[161px] m-3'
+						className='w-[70px] h-[70px] lg:w-[161px] lg:h-[161px] m-3'
 					/>
 					<img
 						src={data.image}
 						alt=''
-						className='w-[70px] h-[70px] md:w-[161px] md:h-[161px] m-3'
+						className='w-[70px] h-[70px] lg:w-[161px] lg:h-[161px] m-3'
 					/>
 				</div>
 			</div>

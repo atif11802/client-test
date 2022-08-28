@@ -16,7 +16,7 @@ const PopularCards = ({ title, image, price, id }) => {
 		>
 			<div className='flex items-center justify-center'>
 				<div className='w-[252px] mt-20'>
-					<img src={image} alt='' className='w-full h-[356px]' />
+					<img src={image} alt='' className='w-full h-[206px]' />
 					<div className='mt-3 flex justify-between'>
 						<p className='text-sm'>Shirts</p>
 						<div className='flex'>

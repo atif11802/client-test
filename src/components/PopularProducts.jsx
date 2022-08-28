@@ -20,7 +20,7 @@ const PopularProducts = () => {
 				Lorem Ipsum is simply dummy text of the printing and typesetting
 				industry.
 			</p>
-			<div class='grid grid-cols-1 md:grid-cols-4 gap-2'>
+			<div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2'>
 				{data?.map((product) => (
 					<div key={product.id}>
 						<PopularCards

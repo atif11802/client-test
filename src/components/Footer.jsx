@@ -48,7 +48,7 @@ const Footer = () => {
             '
 			>
 				<hr />
-				<h1 className='ml-4 pt-2 pb-2 md:ml-0  md:pt-4 md:pb-4'>
+				<h1 className='ml-8 pt-2 pb-2 md:ml-0  md:pt-4 md:pb-4'>
 					Copyright @ Funshion. All Right Reserved.
 				</h1>
 			</div>

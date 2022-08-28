@@ -3,7 +3,7 @@ import Cards from "./Cards";
 
 const Collections = () => {
 	return (
-		<div className='container mx-auto mt-32  md:mt-44 ml-12 w-[290px]  md:w-auto md:h-auto  '>
+		<div className='container mx-auto mt-32 flex justify-center items-center md:mt-44 w-[290px]  md:w-auto md:h-auto  '>
 			<div className='grid grid-cols-1 gap-1  sm:grid-cols-2  md:grid-cols-3 md:gap-4  '>
 				<Cards
 					image={

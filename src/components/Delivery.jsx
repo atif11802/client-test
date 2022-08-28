@@ -3,8 +3,8 @@ import { GrDeliver } from "react-icons/gr";
 
 const Delivery = () => {
 	return (
-		<div className='container mx-auto md:w-[1000px] mt-28 md:mt-44 '>
-			<div className=' mt-16 mb-12  grid grid-cols-2 md:grid-cols-4'>
+		<div className='container mx-auto  flex justify-center items-center lg:w-[1000px] mt-28 md:mt-44 '>
+			<div className=' mt-16 mb-12 gap-3 grid grid-cols-2  lg:grid-cols-4'>
 				<div className='flex items-center'>
 					<div className=''>
 						<GrDeliver size={30} />

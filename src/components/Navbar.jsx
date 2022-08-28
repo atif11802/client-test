@@ -1,15 +1,20 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { BsBag, BsPinterest } from "react-icons/bs";
-import { FiSearch } from "react-icons/fi";
+import { FiLogOut, FiSearch } from "react-icons/fi";
 import { CgProfile } from "react-icons/cg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ auth, setAuth }) => {
 	const [nav, setNav] = useState(false);
+
+	const handleAuth = () => {
+		localStorage.removeItem("Token");
+		setAuth(false);
+	};
 
 	return (
 		<div>
@@ -45,9 +50,17 @@ const Navbar = () => {
 					</ul>
 					<div className='hidden sm:flex md:flex justify-between items-center  pr-8 md:pr-11'>
 						<FiSearch size={24} className='mr-4  cursor-pointer' />
-						<Link to='/signup'>
-							<CgProfile size={24} className='mr-4  cursor-pointer' />
-						</Link>
+						{auth ? (
+							<FiLogOut
+								size={24}
+								className='mr-4  cursor-pointer'
+								onClick={handleAuth}
+							/>
+						) : (
+							<Link to='/profile'>
+								<CgProfile size={24} className='mr-4  cursor-pointer' />
+							</Link>
+						)}
 
 						<BsBag size={24} className='mr-4  cursor-pointer' />
 					</div>
@@ -81,9 +94,12 @@ const Navbar = () => {
 
 					<h1 className='text-2xl p-4 font-bold'>Funshion</h1>
 					<ul className=''>
-						<li className='mr-3 cursor-pointer text-xl border-b-2 p-2 ml-3 border-gray'>
-							Home
-						</li>
+						<Link to='/'>
+							<li className='mr-3 cursor-pointer text-xl border-b-2 p-2 ml-3 border-gray'>
+								Home
+							</li>
+						</Link>
+
 						<li className='mr-3 cursor-pointer text-xl border-b-2 p-2 ml-3 border-gray'>
 							About{" "}
 						</li>
@@ -102,9 +118,12 @@ const Navbar = () => {
 							<li className='mr-3 p-3 cursor-pointer text-xl border-b-2 ml-3 border-gray'>
 								<FiSearch size={33} className='mr-4  cursor-pointer' />
 							</li>
-							<li className='mr-3 p-3 cursor-pointer text-xl border-b-2 ml-3 border-gray'>
-								<CgProfile size={33} className='mr-4  cursor-pointer' />
-							</li>
+							<Link to='/profile'>
+								<li className='mr-3 p-3 cursor-pointer text-xl border-b-2 ml-3 border-gray'>
+									<CgProfile size={33} className='mr-4  cursor-pointer' />
+								</li>
+							</Link>
+
 							<li className='mr-3 p-3 cursor-pointer text-xl border-b-2 ml-3 border-gray'>
 								<BsBag size={33} className='mr-4  cursor-pointer' />
 							</li>
