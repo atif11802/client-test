@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 
 const Profile = ({ setAuth }) => {
 	const [signin, setSignUp] = useState(true);
+	const navigate = useNavigate();
 
 	return (
 		<>
