@@ -118,12 +118,19 @@ const Navbar = ({ auth, setAuth }) => {
 							<li className='mr-3 p-3 cursor-pointer text-xl border-b-2 ml-3 border-gray'>
 								<FiSearch size={33} className='mr-4  cursor-pointer' />
 							</li>
-							<Link to='/profile'>
-								<li className='mr-3 p-3 cursor-pointer text-xl border-b-2 ml-3 border-gray'>
-									<CgProfile size={33} className='mr-4  cursor-pointer' />
-								</li>
-							</Link>
-
+							<li className='mr-3 p-3 cursor-pointer text-xl border-b-2 ml-3 border-gray'>
+								{auth ? (
+									<FiLogOut
+										size={33}
+										className='mr-4  cursor-pointer'
+										onClick={handleAuth}
+									/>
+								) : (
+									<Link to='/profile'>
+										<CgProfile size={33} className='mr-4  cursor-pointer' />
+									</Link>
+								)}
+							</li>
 							<li className='mr-3 p-3 cursor-pointer text-xl border-b-2 ml-3 border-gray'>
 								<BsBag size={33} className='mr-4  cursor-pointer' />
 							</li>
