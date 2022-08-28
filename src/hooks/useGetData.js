@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
 const getData = async () => {
-	const res = await axios.get("https://fakestoreapi.com/products");
+	const res = await axios.get(process.env.REACT_APP_PRODUCTS);
 	return res.data;
 };
 

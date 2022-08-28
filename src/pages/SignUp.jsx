@@ -22,7 +22,7 @@ const SignUp = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-
+		console.log("handleSubmit");
 		mutation.mutate({
 			email: "John@gmail.com",
 			username: "johnd",
