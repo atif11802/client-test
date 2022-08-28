@@ -2,7 +2,6 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { DotLoader } from "react-spinners";
 import Delivery from "../components/Delivery";
-import Navbar from "../components/Navbar";
 import PopularProducts from "../components/PopularProducts";
 import ProductBody from "../components/ProductBody";
 import useGetSingleProduct from "../hooks/useGetSingleProduct";

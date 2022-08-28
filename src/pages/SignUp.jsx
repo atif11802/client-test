@@ -6,7 +6,6 @@ import LinkedIn from "../assets/Linkedin.png";
 import { ToastContainer, toast } from "react-toastify";
 import useSignUp from "../hooks/useSignUp";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar";
 
 const SignUp = () => {
 	const [fName, setFname] = useState("John");
@@ -191,7 +190,7 @@ const SignUp = () => {
 				</div>
 				<div className='flex items-center justify-between'>
 					<a
-						href='#'
+						href='/'
 						className='text-sm font-medium text-primary-600 hover:underline dark:text-primary-500'
 					>
 						Forgot Your password?

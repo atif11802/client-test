@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { FaFacebook } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
 import { BsBag, BsPinterest } from "react-icons/bs";
@@ -7,13 +7,18 @@ import { CgProfile } from "react-icons/cg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { SignOutRed } from "../actions";
 
-const Navbar = ({ auth, setAuth }) => {
+const Navbar = () => {
 	const [nav, setNav] = useState(false);
+	const islogged = useSelector((state) => state.islogged);
+
+	const dispatch = useDispatch();
 
 	const handleAuth = () => {
 		localStorage.removeItem("Token");
-		setAuth(false);
+		dispatch(SignOutRed());
 	};
 
 	return (
@@ -50,7 +55,7 @@ const Navbar = ({ auth, setAuth }) => {
 					</ul>
 					<div className='hidden sm:flex md:flex justify-between items-center  pr-8 md:pr-11'>
 						<FiSearch size={24} className='mr-4  cursor-pointer' />
-						{auth ? (
+						{islogged ? (
 							<FiLogOut
 								size={24}
 								className='mr-4  cursor-pointer'
@@ -119,7 +124,7 @@ const Navbar = ({ auth, setAuth }) => {
 								<FiSearch size={33} className='mr-4  cursor-pointer' />
 							</li>
 							<li className='mr-3 p-3 cursor-pointer text-xl border-b-2 ml-3 border-gray'>
-								{auth ? (
+								{islogged ? (
 									<FiLogOut
 										size={33}
 										className='mr-4  cursor-pointer'

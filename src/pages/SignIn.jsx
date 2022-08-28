@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "../styles/hr.css";
 import Facebook from "../assets/Facebook Icon.png";
 import Google from "../assets/Google G.png";
@@ -6,12 +6,16 @@ import LinkedIn from "../assets/Linkedin.png";
 import { useNavigate } from "react-router-dom";
 import useSignIn from "../hooks/useSignIn";
 import { ToastContainer, toast } from "react-toastify";
+import { useDispatch } from "react-redux";
+import { SignInRed } from "../actions";
 
-const SignIn = ({ setAuth }) => {
+const SignIn = () => {
 	const [email, setEmail] = useState("John@gmail.com");
 	const [password, setPassword] = useState("m38rmF$");
 	const navigate = useNavigate();
 	const mutation = useSignIn();
+
+	const dispatch = useDispatch();
 
 	const handleSignIn = (e) => {
 		e.preventDefault();
@@ -33,7 +37,8 @@ const SignIn = ({ setAuth }) => {
 		});
 
 		navigate("/");
-		setAuth(true);
+
+		dispatch(SignInRed());
 	}
 
 	return (
@@ -77,7 +82,7 @@ const SignIn = ({ setAuth }) => {
 				</div>
 				<div className='flex items-center justify-between'>
 					<a
-						href='#'
+						href='/'
 						className='text-sm font-medium text-primary-600 hover:underline dark:text-primary-500'
 					>
 						Forgot Your password?
