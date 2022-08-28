@@ -27,7 +27,7 @@ const Hero = () => {
 									05 :{" "}
 									<span
 										className='
-                                  text-xs  sm:text-sm font-light text-center'
+                                  text-xs  sm:text-sm font-light '
 									>
 										Days{" "}
 									</span>
@@ -36,7 +36,7 @@ const Hero = () => {
 									{"  "}72 :{" "}
 									<span
 										className='
-										text-xs  sm:text-sm font-light text-center'
+										text-xs  sm:text-sm font-light '
 									>
 										Hours{" "}
 									</span>{" "}
@@ -46,7 +46,7 @@ const Hero = () => {
 									35 :{" "}
 									<span
 										className='
-										text-xs  sm:text-sm font-light text-center'
+										text-xs  sm:text-sm font-light '
 									>
 										Minitues
 									</span>{" "}
@@ -56,7 +56,7 @@ const Hero = () => {
 									20{" "}
 									<span
 										className='
-										text-xs  sm:text-sm font-light text-center ml-2'
+										text-xs  sm:text-sm font-light  ml-2'
 									>
 										{" "}
 										Seconds{" "}
