@@ -3,18 +3,21 @@
 ## Guidline
 
 ## Live Link
-https://stellular-smakager-8a4009.netlify.app/
+https://glittering-lebkuchen-0d9217.netlify.app/
 
 
 ## To run this App
 
-- Clone the git repository
-- then cd to that folder 
-- type in command npm install
-- Then finally npm start
-- ✨Magic ✨
+- Clone https://github.com/atif11802/client-test.git
+- Cd to client-test
+- type  npm install in command
+- run npm start 
+- http://localhost:3000/
+
+
 
 ## Features
+
 - Simple Ecommerce Website
 - user Can sign in and sign out
 - user can see the Product in Home Page

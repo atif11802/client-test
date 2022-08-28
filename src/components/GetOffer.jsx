@@ -8,13 +8,13 @@ const GetOffer = () => {
 					<h1 className='w-1/2 text-sm md:text-xl lg:text-4xl font-bold'>
 						SIGN UP FOR NEWS & GET 20% OFF
 					</h1>
-					<div className='w-1/2 mt-6 flex items-center'>
+					<div className='w-1/2 mt-6 flex flex-col sm:flex-row items-center'>
 						<input
 							type='text'
-							className='w-3/4 h-14 outline-0 p-4 placeholder-gray-500'
+							className='w-[115px] sm:w-3/4 h-14 outline-0 p-4 placeholder-gray-500'
 							placeholder='Your Email Address'
 						/>
-						<button className='bg-orange-700 w-[30px] md:w-1/4 h-14 text-white text-xs  lg:text-xl'>
+						<button className='mt-2 sm:mt-0 bg-orange-700 w-[45px] md:w-1/4 h-14 text-white text-xs  lg:text-xl'>
 							Sign up
 						</button>
 					</div>
